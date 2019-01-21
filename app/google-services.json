@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "902441740232",
+    "firebase_url": "https://poster-f25d4.firebaseio.com",
+    "project_id": "poster-f25d4",
+    "storage_bucket": "poster-f25d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902441740232:android:7c441d7c3ea590ac",
+        "android_client_info": {
+          "package_name": "com.AhmedSheir.online"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902441740232-2p4ben1tbu40cmh9a4nf41coppp54cqn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.AhmedSheir.online",
+            "certificate_hash": "d6174d6ca18e9a8461a9f7794b9c6b189075be4f"
+          }
+        },
+        {
+          "client_id": "902441740232-e8096o5i05j6r3tjb7bcq33pq87mpdv1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP5GlT_e3HHwvXocVZarL4udk0KX4vDxA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902441740232-e8096o5i05j6r3tjb7bcq33pq87mpdv1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

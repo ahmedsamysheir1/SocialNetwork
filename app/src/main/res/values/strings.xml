@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SocialNetwork</string>
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="time">time_ago_seconds</string>
+    <string name="time_ago_prefix">time_ago_prefix</string>
+    <string name="time_ago_suffix">time_ago_suffix</string>
+    <string name="time_ago_seconds">time_ago_seconds</string>
+    <string name="time_ago_minute">time_ago_minute</string>
+    <string name="time_ago_minutes">time_ago_minutes</string>
+    <string name="time_ago_hour">time_ago_hour</string>
+    <string name="time_ago_hours">time_ago_hours</string>
+    <string name="time_ago_day">time_ago_day</string>
+    <string name="time_ago_days">time_ago_days</string>
+    <string name="time_ago_month">time_ago_month</string>
+    <string name="time_ago_months">time_ago_months</string>
+    <string name="time_ago_year">time_ago_year</string>
+    <string name="time_ago_years">time_ago_years</string>
+
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@color/colorProfile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+
+         <de.hdodenhof.circleimageview.CircleImageView
+             android:id="@+id/my_profile_pic"
+             android:layout_width="250dp"
+             android:layout_height="250dp"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="15dp"
+             android:src="@drawable/profile"/>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/my_profile_fullname"
+             android:layout_below="@id/my_profile_pic"
+             android:text="Profile Name"
+             android:gravity="center"
+             android:textSize="20sp"
+             android:layout_marginTop="5dp"
+             android:textAllCaps="false"
+             android:textColor="@android:color/background_light"/>
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/my_username"
+             android:layout_below="@id/my_profile_fullname"
+             android:text="Username"
+             android:gravity="center"
+             android:textSize="14sp"
+             android:textAllCaps="false"
+             android:textColor="@android:color/background_light"/>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/my_status"
+             android:layout_below="@id/my_username"
+             android:text="add bio"
+             android:gravity="center"
+             android:textSize="22sp"
+             android:textAllCaps="false"
+             android:textColor="@android:color/darker_gray"
+             android:layout_marginTop="5dp"/>
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/my_country"
+             android:layout_below="@id/my_status"
+             android:text="Country"
+             android:gravity="center"
+             android:textSize="18sp"
+             android:textAllCaps="false"
+             android:textColor="@color/colorAccent"
+             android:layout_marginTop="50dp"
+             />
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/my_dob"
+             android:layout_below="@id/my_country"
+             android:text="Date of Birth"
+             android:gravity="center"
+             android:textSize="18sp"
+             android:textAllCaps="false"
+             android:textColor="@color/colorAccent"
+             android:layout_marginTop="3dp"
+             />
+
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/my_gender"
+             android:layout_below="@id/my_dob"
+             android:text="Gender"
+             android:gravity="center"
+             android:textSize="18sp"
+             android:textAllCaps="false"
+             android:textColor="@color/colorAccent"
+             android:layout_marginTop="3dp"
+             />
+
+         <TextView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:id="@+id/my_relationship"
+             android:layout_below="@id/my_gender"
+             android:text="Relationship Status"
+             android:gravity="center"
+             android:textSize="18sp"
+             android:textAllCaps="false"
+             android:textColor="@color/colorAccent"
+             android:layout_marginTop="3dp"
+             />
+
+         <Button
+             android:id="@+id/my_post_button"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentStart="true"
+             android:layout_below="@+id/my_gender"
+             android:layout_marginStart="20dp"
+             android:layout_marginTop="50dp"
+             android:background="@color/colorPrimary"
+             android:text="Posts"
+             android:textAllCaps="false"
+             android:textColor="@android:color/background_light"
+             android:textSize="16sp"
+             android:textStyle="italic" />
+
+         <Button
+             android:id="@+id/my_friends_button"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentEnd="true"
+             android:layout_below="@+id/my_gender"
+             android:layout_marginEnd="15dp"
+             android:layout_marginTop="50dp"
+             android:background="@color/colorPrimary"
+             android:text="Friends"
+             android:textAllCaps="false"
+             android:textColor="@android:color/background_light"
+             android:textSize="16sp"
+             android:textStyle="bold" />
+
+
+     </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

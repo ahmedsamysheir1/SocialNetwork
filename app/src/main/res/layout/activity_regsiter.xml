@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.AhmedSheir.online.RegsiterActivity">
+
+    <ImageView
+        android:id="@+id/register_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/register_icon"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/emailblue"
+        android:ems="10"
+        android:hint=" Email "
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_email"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/lockblue"
+        android:ems="10"
+        android:hint=" Password "
+        android:inputType="textPassword"
+        android:padding="14dp" />
+
+    <EditText
+        android:id="@+id/registerr_confrim_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/register_password"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/verifiedblue"
+        android:ems="10"
+        android:hint=" Confirm Password "
+        android:inputType="textPassword"
+        android:padding="14dp" />
+
+    <Button
+        android:id="@+id/register_cerate_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:background="@drawable/color_button_blue"
+        android:padding="5dp"
+        android:text="CREATE ACCOUNT"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>

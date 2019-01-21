@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.AhmedSheir.online.LoginActivity"
+    >
+
+
+    <ImageView
+        android:id="@+id/login_icon"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_icon"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/emailblue"
+        android:ems="10"
+        android:hint=" Email "
+        android:inputType="textEmailAddress"
+        android:padding="14dp"
+        android:textAlignment="textStart"/>
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_email"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/inputs"
+        android:drawableLeft="@drawable/lockblue"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="textPassword"
+        android:padding="14dp"
+        android:textAlignment="textStart"/>
+
+    <Button
+        android:id="@+id/login_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_password"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/color_button_blue"
+        android:padding="14dp"
+        android:text="Login"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/register_account_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/login_account"
+        android:layout_marginTop="20dp"
+        android:text="Don't have an Account Need New Account ?"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_account_link"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="---- OR LOGIN WITH ----"
+        android:textColor="#cfcfcf"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:id="@+id/google_singin_button"
+            android:layout_width="75dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="19dp"
+            android:src="@drawable/google"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/forget_password_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Forget Password ?"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginVertical="20dp"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonProfileActivity"
+    android:background="@color/colorProfile">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/person_profile"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/profile"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_fullname"
+                android:layout_below="@id/person_profile"
+                android:text="Profile Name"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_username"
+                android:layout_below="@id/person_fullname"
+                android:text="Username"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"/>
+
+            <TextView
+                android:id="@+id/person_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_username"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="add bio"
+                android:textAllCaps="false"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="22sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_country"
+                android:layout_below="@id/person_status"
+                android:text="Country"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="50dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_dob"
+                android:layout_below="@id/person_country"
+                android:text="Date of Birth"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="3dp"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_gender"
+                android:layout_below="@id/person_dob"
+                android:text="Gender"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="3dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_relationship"
+                android:layout_below="@id/person_gender"
+                android:text="Relationship Status"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="3dp"
+                />
+
+            <Button
+                android:id="@+id/person_friend_send_requset_btn"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_relationship"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:background="@color/colorPrimary"
+                android:text="Send Friend Requset"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/decline_friend_requset"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_friend_send_requset_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#E70737"
+                android:text="Decline Friend Requset"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_light"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
